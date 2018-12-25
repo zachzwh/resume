@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>我的简历</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="//at.alicdn.com/t/font_981267_83lkkcvcrw3.js"></script>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="topNavBar clearfix">
-        <a class="logo" href="#" alt="logo">
-            <span class="rs">RS</span><span class="card">card</span>
-        </a>
-        <nav>
-            <ul class="clearfix">
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SKILLS</a></li>
-                <li><a href="#">EXPERIENCE</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">BLOG</a></li>
-                <li><a href="#">CALENDAR</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#">OTHER</a></li>
-                <li><a href="#">ALL DEMOS</a></li>
-            </ul>
-        </nav>
+    <div class="topNavBar">
+        <div class="topNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo">
+                <span class="rs">RS</span><span class="card">card</span>
+            </a>
+            <nav>
+                <ul class="clearfix">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SKILLS</a></li>
+                    <li><a href="#">EXPERIENCE</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CALENDAR</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">OTHER</a></li>
+                    <li><a href="#">ALL DEMOS</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="banner" style="background-image: url(#)">
+    <div class="banner">
+        <div class="mask"></div>
     </div>
     <main>
-        <div class="card">
-            <div class="picture">
-                    <img src="" alt="头像">
-            </div>
-            <div class="text">
-                <div class="profile">
-                    <span class="welcome">Hello</span>
-                    <h1>Zach Zhang</h1>
+        <div class="userCard">
+            <div class="picAndText clearfix">
+                <div class="picture">
+                    <img src="./images/avatar.jpg" width="299" height="347" alt="头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class="triangle"></span>
+                    </span>
+                    <h1>Zach Z</h1>
                     <p>前端开发工程师</p>
                     <hr>
                     <dl>
@@ -50,16 +67,34 @@
                         <dd>12312345678</dd>
                     </dl>
                 </div>
-                <footer class="media">
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                </footer>
             </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon biger" aria-hidden="true">
+                        <use xlink:href="#icon-juejin"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon biger" aria-hidden="true">
+                        <use xlink:href="#icon-weibiaoti-"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-twitter"></use>
+                    </svg>
+                </a>
+            </footer>
         </div>
 
         <a href="#" class="button">下载 PDF 简历</a>
@@ -90,7 +125,7 @@
                 <li>原生JS&amp;CSS</li>
             </ol>
         </nav>
-      
+
         <div class="jobs">
             <div class="big"></div>
             <div class="small"></div>
@@ -98,4 +133,5 @@
         </div>
     </section>
 </body>
+
 </html>
